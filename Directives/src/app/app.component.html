@@ -51,7 +51,7 @@
 ---->
 
 
-
+<!---
 <div *ngIf = "true;else elseBlock">
     true block
 </div>
@@ -59,14 +59,21 @@
 <ng-template #elseBlock>
   falseblock
 </ng-template>
+--->
 
 
-
-
+<!---
 <div *ngFor = "let y of[100,200,300,400,500];let e =even">
      <div *ngIf = "e" style = "color:chartreuse">{{y}}</div>
 </div>
+---->
 
 
 
-
+<input type = "text" #uname/>
+<br><br>
+<input type = "password" #upwd/>
+<br><br>
+<button (dblclick) = "clickme(uname.value,upwd.value)">
+  Doubleclick
+</button>

@@ -32,6 +32,13 @@ export class AppComponent {
 
  ];
 
+ clickme(arg1:string,arg2:string):any{
+   if(arg1=="ashok" && arg2=="ashokit"){
+      alert("login success")
+   }else{
+      alert("login failed")
+   }
+ }
 
 
 }
