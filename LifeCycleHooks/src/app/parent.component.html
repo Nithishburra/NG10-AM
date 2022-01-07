@@ -1,0 +1,13 @@
+<input type = "number" [(ngModel)] = "num">
+
+<child [v1] = "num"></child>
+
+
+
+<div *ngFor="let x of arr">
+     {{x}}
+</div>
+
+<br>
+
+<button (click)="changearr()">change</button>
