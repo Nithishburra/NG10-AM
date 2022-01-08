@@ -1,0 +1,7 @@
+<child [p_id]="record.p_id"
+       [p_name]="record.p_name"
+       [p_price]="record.p_price"
+       (share) = "myFun($event)"
+      *ngFor="let record of arr">
+    
+</child>
