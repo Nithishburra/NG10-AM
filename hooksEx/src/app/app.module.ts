@@ -14,6 +14,8 @@ import { Comp1Component } from './comp1.component';
 import { Comp2Component } from './comp2.component';
 import { XComponent } from './x.component';
 import { YComponent } from './y.component';
+import { Demo1Component } from './demo1.component';
+import { Demo2Component } from './demo2.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,16 @@ import { YComponent } from './y.component';
     Comp1Component,
     Comp2Component,
     XComponent,
-    YComponent
+    YComponent,
+    Demo1Component,
+    Demo2Component
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [YComponent]
+  bootstrap: [Demo2Component]
 })
 export class AppModule { }
 
