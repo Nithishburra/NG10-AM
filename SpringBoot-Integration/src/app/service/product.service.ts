@@ -11,6 +11,6 @@ export default class ProductService{
     constructor(private http:HttpClient){}
 
     public GetProducts():Observable<ProductModel[]>{
-        return this.http.get<ProductModel[]>("http://localhost:5000/api/v1/products");
+        return this.http.get<ProductModel[]>("http://localhost:5200/api/v1/products");
     }
 }
